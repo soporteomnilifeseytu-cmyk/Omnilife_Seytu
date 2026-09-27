@@ -1,0 +1,11 @@
+CAMBIOS REALIZADOS
+1. Categorías separadas por marca: al seleccionar OMNILIFE o SEYTÚ se cargan sus categorías desde MySQL.
+2. Crear categoría: ahora pregunta primero si se desea crear una nueva y, si se acepta, solicita el nombre y la selecciona automáticamente.
+3. Guardado de productos: nombre, marca, categoría, descripción, precio, stock, estado e imagen se guardan en productos.
+4. Imágenes: las imágenes subidas se guardan en assets/uploads y la ruta guardada en MySQL tiene prioridad sobre la imagen automática por ID.
+5. Favoritos: estrellita conectada a MySQL; se cargan al iniciar sesión, se agregan/eliminan y se limpian correctamente.
+6. Resumen del administrador: la sección de favoritos consulta los favoritos reales de todos los usuarios desde MySQL.
+7. Contraseña de administrador: deja de usar admin/admin como acceso especial del navegador. La cuenta admin se sincroniza con MySQL y el cambio de contraseña invalida la anterior.
+8. Cambio de contraseña de usuario: continúa usando change_password y guarda el nuevo hash en MySQL.
+9. La API crea automáticamente las tablas necesarias si la instalación anterior no las tenía.
+10. Se mantuvo la estructura visual existente y se modificaron solo las funciones solicitadas.

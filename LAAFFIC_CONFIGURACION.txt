@@ -1,0 +1,29 @@
+CONFIGURACIÓN DE SMS CON LAAFFIC
+
+1. En LAAFFIC necesitas:
+- API Key
+- API Secret
+- App ID de la aplicación SMS
+- Sender ID (opcional, según el país/ruta de envío)
+
+2. Abre:
+backend/config.php
+
+3. Completa:
+'sms_enabled' => true,
+'sms_provider' => 'laaffic',
+'laaffic_api_key' => 'TU_API_KEY',
+'laaffic_api_secret' => 'TU_API_SECRET',
+'laaffic_app_id' => 'TU_APP_ID',
+'laaffic_sender_id' => 'TU_SENDER_ID',
+'laaffic_track_clicks' => 0,
+
+4. No publiques API Key ni API Secret.
+
+5. La aplicación envía el código de recuperación mediante POST a:
+https://api.laaffic.com/v3/sendSms
+
+La firma se genera automáticamente con:
+MD5(API_KEY + API_SECRET + TIMESTAMP)
+
+No necesitas crear otra tabla. Se usa recuperacion_clave.

@@ -1,0 +1,47 @@
+CAMBIOS APLICADOS
+
+1. Se eliminó de la parte inferior de la página pública:
+   - Catálogo central
+   - Sincronización
+   - Pedidos y stock
+   - Usuarios y boletas
+   - Flujo Productos → Carrito → Pago → Boleta
+
+2. Se conserva el pie de página y los enlaces de contacto existentes.
+
+3. Crear cuenta ahora solicita:
+   - Nombres
+   - Apellidos
+   - Usuario
+   - Correo electrónico (Gmail)
+   - Número telefónico
+   - Contraseña
+   - Confirmar contraseña
+
+4. El registro guarda el número telefónico en la columna usuarios.telefono.
+
+5. Inicio de sesión permite ingresar con Gmail/correo o usuario y contraseña.
+
+6. La conexión de pedidos y detalle de pedidos existente en backend/api.php se conserva:
+   - pedidos
+   - detalle_pedido
+   - creación de pedido
+   - consulta de pedidos con sus detalles
+
+No se eliminaron productos, usuarios, tablas ni archivos existentes del proyecto.
+
+
+CORRECCIÓN FINAL: Se eliminó el footer duplicado del panel de administrador para evitar que aparezca dos veces en la interfaz. Se reforzó además la regla de ocultamiento de #adminPanel, #app y #auth cuando llevan la clase hidden.
+
+
+ACTUALIZACIÓN FINAL - ADMINISTRACIÓN Y CUENTA
+- Menú administrador reducido a: Resumen, Pedidos, Usuarios y Configuración.
+- Eliminado el apartado independiente Productos del administrador.
+- Resumen ahora incluye gestión de productos y botón Agregar producto.
+- Agregar producto permite nombre, categoría, descripción, precio, cantidad/stock, estado y carga de imagen.
+- Los productos nuevos se guardan en MySQL y se sincronizan con el catálogo de usuarios.
+- Pedidos del administrador se consultan desde MySQL y se actualizan automáticamente.
+- Usuarios permite crear clientes o administradores y cambiar el tipo de cuenta.
+- Los administradores creados con rol administrador pueden iniciar sesión y entrar al panel.
+- Mejorado visualmente el formulario de Datos de mi cuenta y contraseña, con campos amplios, alineados y separados.
+- Eliminada la sección administrativa de Favoritos que no pertenecía al menú solicitado.

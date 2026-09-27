@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="Cat&aacute;logo digital OMNILIFE &times; SEYT&Uacute;" name="description">
+  <title>
+   OMNILIFE &times; SEYT&Uacute; | Cat&aacute;logo digital
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+ </head>
+ <body>
+  <div class="splash" id="splash">
+   <img alt="OMNILIFE SEYT&Uacute;" src="assets/logo.jpeg">
+   <div class="splash-name">
+    OMNILIFE &times; SEYT&Uacute;
+   </div>
+   <span>
+    Cargando tu cat&aacute;logo&hellip;
+   </span>
+  </div>
+  <section class="auth-screen hidden" id="auth">
+   <div class="auth-visual">
+    <div class="brand-row">
+     <img alt="Logo" src="assets/logo.jpeg">
+     <span>
+      CAT&Aacute;LOGO DIGITAL
+     </span>
+    </div>
+    <div class="visual-copy">
+     <small>
+      OMNILIFE &middot; SEYT&Uacute; &middot; ADMINISTRACI&Oacute;N
+     </small>
+     <h1>
+      Una experiencia m&aacute;s completa.
+     </h1>
+     <p>
+      Compra, revisa tus pedidos o entra al &aacute;rea administrativa para gestionar productos, usuarios y ventas.
+     </p>
+     <div class="auth-showcase auth-showcase-three">
+      <div>
+       <img alt="Producto Aqtúa" src="assets/IMG/imagen-03.png">
+       <span>OMNILIFE</span>
+      </div>
+      <div>
+       <img alt="Producto SEYTÚ" src="assets/IMG/imagen-34.png">
+       <span>SEYTÚ</span>
+      </div>
+      <div>
+       <img alt="Producto SEYTÚ" src="assets/IMG/imagen-36.png">
+       <span>SEYTÚ</span>
+      </div>
+     </div>     </div>
+     <div class="visual-pills">
+      <span>
+       ✦ Cat&aacute;logo
+      </span>
+      <span>
+       ♡ Favoritos
+      </span>
+      <span>
+       🛒 Pedido
+      </span>
+      <span>
+       ▣ Intranet
+      </span>
+     </div>
+    </div>
+   </div>
+   <div class="auth-card">
+    <div class="auth-head">
+     <img alt="Logo" src="assets/logo.jpeg">
+     <div class="auth-brand-copy">
+      <b>OMNILIFE &times; SEYT&Uacute;</b>
+      <small>Cat&aacute;logo &middot; compras &middot; administraci&oacute;n</small>
+     </div>
+    </div>
+    <div class="auth-home hidden" id="authHome">
+    </div>
+    <div id="clientAccess">
+     <div id="loginBox">
+      <span class="eyebrow">
+       ACCESO SEGURO
+      </span>
+      <h2>
+       Iniciar sesi&oacute;n
+      </h2>
+      <p>
+       Ingresa con tu usuario y contrase&ntilde;a para continuar con tus pedidos y favoritos.
+      </p>
+      <form id="loginForm">
+       <label>
+        Gmail, usuario o teléfono
+        <input autocomplete="username" id="loginUser" placeholder="tucorreo@gmail.com, tu usuario o tu teléfono" required type="text">
+       </label>
+       <label>
+        Contrase&ntilde;a
+        <input autocomplete="current-password" id="loginPass" placeholder="Tu contrase&ntilde;a" required type="password">
+       </label>
+       <button class="btn primary full" type="submit">
+        Iniciar sesi&oacute;n
+        <span>
+         &rarr;
+        </span>
+       </button>
+      </form>
+      <button class="back-link full" id="showForgot">¿Olvidaste tu contraseña?</button>
+      <button class="ghost full" id="showRegister">
+       &iquest;No tienes cuenta? Crear cuenta
+      </button>
+      <button class="guest-access full" id="continueGuest">
+       Continuar como invitado
+      </button>
+      <small class="guest-note">Puedes explorar, marcar favoritos y agregar productos. Para comprar debes iniciar sesi&oacute;n.</small>
+      <div class="msg" id="loginMsg">
+      </div>
+     </div>
+     <div class="hidden" id="registerBox">
+      <span class="eyebrow">
+       NUEVA CUENTA
+      </span>
+      <h2>
+       Crea tu cuenta
+      </h2>
+      <p>
+       Completa tus datos. Tu Gmail se solicita &uacute;nicamente al crear la cuenta.
+      </p>
+      <form id="registerForm">
+       <div class="two">
+        <label>
+         Nombres
+         <input autocomplete="given-name" id="regName" placeholder="Tus nombres" required>
+        </label>
+        <label>
+         Apellidos
+         <input autocomplete="family-name" id="regLast" placeholder="Tus apellidos" required>
+        </label>
+       </div>
+       <label>
+        Usuario
+        <input autocomplete="username" id="regUser" placeholder="Crea tu usuario" required>
+       </label>
+       <label>
+        Correo electrónico (Gmail)
+        <input autocomplete="email" id="regEmail" placeholder="tucorreo@gmail.com" required type="email">
+       </label>
+       <label>
+        Número telefónico
+        <input autocomplete="tel" id="regPhone" placeholder="Ej. 999 111 222" inputmode="tel" maxlength="20" required type="tel">
+       </label>
+       <label>
+        Contrase&ntilde;a
+        <input autocomplete="new-password" id="regPass" minlength="6" placeholder="M&iacute;nimo 6 caracteres" required type="password">
+       </label>
+       <label>
+        Confirmar contrase&ntilde;a
+        <input autocomplete="new-password" id="regPassConfirm" minlength="6" placeholder="Repite tu contrase&ntilde;a" required type="password">
+       </label>
+       <button class="btn primary full" type="submit">
+        Crear cuenta
+        <span>
+         &rarr;
+        </span>
+       </button>
+      </form>
+      <div class="msg" id="regMsg">
+      </div>
+      <button class="back-link register-back" id="backLogin">
+       &larr; Volver a iniciar sesi&oacute;n
+      </button>
+     </div>
+    </div>
+    <div class="hidden" id="adminAccess">
+    </div>
+    <small class="legal">
+     Proyecto acad&eacute;mico &middot; Los precios son referenciales y la administraci&oacute;n es de demostraci&oacute;n.
+    </small>
+   </div>
+  </section>
+  <div class="modal hidden" id="forgotPasswordModal">
+   <div class="modal-card auth-required-modal">
+    <button type="button" class="close" data-close="forgotPasswordModal">&times;</button>
+    <span class="eyebrow">RECUPERAR ACCESO</span>
+    <h2>¿Olvidaste tu contraseña?</h2>
+    <p>Escribe el correo con el que registraste tu cuenta. Te enviaremos un código para crear una nueva contraseña.</p>
+    <form id="forgotForm">
+     <label>Correo electrónico<input id="forgotEmail" type="email" autocomplete="email" placeholder="tucorreo@gmail.com" required></label>
+     <button class="btn primary full" type="submit">Enviar código <span>→</span></button>
+    </form>
+    <div class="msg" id="forgotMsg"></div>
+    <div class="hidden" id="resetBox">
+      <form id="resetForm">
+       <label>Código de recuperación<input id="resetCode" inputmode="numeric" maxlength="6" placeholder="000000" required></label>
+       <label>Nueva contraseña<input id="resetPass" type="password" minlength="6" autocomplete="new-password" placeholder="Mínimo 6 caracteres" required></label>
+       <label>Confirmar contraseña<input id="resetPass2" type="password" minlength="6" autocomplete="new-password" placeholder="Repite tu contraseña" required></label>
+       <button class="btn primary full" type="submit">Guardar nueva contraseña</button>
+      </form>
+      <div class="msg" id="resetMsg"></div>
+    </div>
+   </div>
+  </div>
+
+  <div class="app hidden" id="app">
+   <aside class="sidebar">
+    <div class="side-logo">
+     <img alt="Logo" src="assets/logo.jpeg">
+     <div>
+      <b>
+       OMNILIFE &times; SEYT&Uacute;
+      </b>
+      <small>
+       CAT&Aacute;LOGO DIGITAL
+      </small>
+     </div>
+    </div>
+    <nav>
+     <button class="nav active" data-go="inicio">
+      ⌂
+      <span>
+       Inicio
+      </span>
+     </button>
+     <button class="nav" data-go="catalogo">
+      ▦
+      <span>
+       Cat&aacute;logo
+      </span>
+     </button>
+     <button class="nav" data-go="favoritos">
+      ♡
+      <span>
+       Favoritos
+      </span>
+      <b id="favCount">
+       0
+      </b>
+     </button>
+     <button class="nav" data-go="pedido">
+      🛒
+      <span>
+       Mi pedido
+      </span>
+      <b id="cartCount">
+       0
+      </b>
+     </button>
+     <button class="nav" data-go="historial">
+      ▤
+      <span>
+       Mis compras
+      </span>
+      <b id="orderCount">
+       0
+      </b>
+     </button>
+     <button class="nav" data-go="opiniones">
+      ✎
+      <span>
+       Foro
+      </span>
+     </button>
+     <button class="nav" data-go="cuenta">
+      ◉
+      <span>
+       Mi cuenta
+      </span>
+     </button>
+     <button class="nav" data-go="config">
+      ⚙
+      <span>
+       Configuraci&oacute;n
+      </span>
+     </button>
+    </nav>
+    <div class="side-bottom">
+     <div class="avatar" id="sideAvatar">
+      I
+     </div>
+     <div>
+      <b id="sideName">
+       Invitado
+      </b>
+      <small id="sideEmail">
+       Modo invitado
+      </small>
+     </div>
+     <button id="logout">
+      ↪ Cerrar sesión
+     </button>
+    </div>
+   </aside>
+   <main class="main">
+    <header class="topbar">
+     <button class="icon" id="mobileMenu">
+      ☰
+     </button>
+     <div>
+      <small class="eyebrow">
+       OMNILIFE &times; SEYT&Uacute;
+      </small>
+      <strong id="pageTitle">
+       Inicio
+      </strong>
+     </div>
+     <div class="top-actions">
+      <button aria-label="Abrir carrito" class="cart-chip" id="openCartTop">
+       🛒
+       <span>
+        Mi carrito
+       </span>
+       <b id="cartTop">
+        0
+       </b>
+      </button>
+      <button class="profile" data-go="cuenta">
+       <span class="avatar" id="topAvatar">
+        I
+       </span>
+       <span>
+        <b id="topName">
+         Invitado
+        </b>
+        <small id="topEmail">
+         &mdash;
+        </small>
+       </span>
+      </button>
+     </div>
+    </header>
+    <div class="toast" id="toast">
+    </div>
+    <section class="section active" id="inicio">
+     <div class="hero">
+      <div class="hero-copy">
+       <span class="eyebrow">
+        BIENESTAR &middot; BELLEZA &middot; CUIDADO
+       </span>
+       <h1 id="welcome">
+        Todo lo que buscas,
+        <em>
+         en un solo lugar.
+        </em>
+       </h1>
+       <p>
+        Una tienda digital con dos l&iacute;neas, productos organizados, stock actualizado y un proceso de compra m&aacute;s claro.
+       </p>
+       <div class="hero-actions">
+        <button class="btn primary" data-go="catalogo">
+         Explorar cat&aacute;logo
+         <span>
+          &rarr;
+         </span>
+        </button>
+        <button class="btn light" data-go="pedido" id="heroCart">
+         🛒 Abrir carrito
+         <b id="heroCartCount">
+          0
+         </b>
+        </button>
+       </div>
+       <div class="stats">
+        <div>
+         <b id="productStat">
+          24
+         </b>
+         <span>
+          PRODUCTOS
+         </span>
+        </div>
+        <div>
+         <b>
+          02
+         </b>
+         <span>
+          L&Iacute;NEAS
+         </span>
+        </div>
+        <div>
+         <b>
+          24/7
+         </b>
+         <span>
+          CAT&Aacute;LOGO
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="hero-visual">
+       <div class="brand-orb">
+        <img alt="OMNILIFE SEYT&Uacute;" src="assets/logo.jpeg">
+       </div>
+       <div class="floating-card one">
+        ✦
+        <b>
+         Stock sincronizado
+        </b>
+        <small>
+         Los cambios se reflejan en toda la p&aacute;gina.
+        </small>
+       </div>
+       <div class="floating-card two">
+        &checkmark;
+        <b>
+         Compra confirmada
+        </b>
+        <small>
+         Boleta moderna e imprimible.
+        </small>
+       </div>
+      </div>
+     </div>
+     <div class="section-title">
+      <div>
+       <small class="eyebrow">
+        SELECCI&Oacute;N
+       </small>
+       <h2>
+        Productos destacados
+       </h2>
+      </div>
+      <button class="link" data-go="catalogo">
+       Ver todo &rarr;
+      </button>
+     </div>
+     <div class="grid" id="featured">
+     </div>
+
+     <div class="smart-home-panel">
+      <div class="smart-panel-head"><div><small class="eyebrow">CENTRO INTELIGENTE</small><h2>Tu experiencia, más completa.</h2><p>Herramientas rápidas para guardar, descubrir y organizar tus productos.</p></div><span class="live-pill">● Todo conectado</span></div>
+      <div class="smart-grid">
+       <div class="smart-card"><div class="smart-card-title"><span>✦</span><div><b>Acciones rápidas</b><small>Accede a las funciones que más usarás.</small></div></div><div class="smart-actions">
+        <button data-smart-go="favoritos"><span>♡</span><div><b>Favoritos</b><small>Productos guardados</small></div><strong>→</strong></button>
+        <button data-smart-go="historial"><span>⌁</span><div><b>Mis compras</b><small>Pedidos y boletas</small></div><strong>→</strong></button>
+        <button data-smart-go="cuenta"><span>♙</span><div><b>Mi cuenta</b><small>Datos y perfil</small></div><strong>→</strong></button>
+        <button data-smart-go="config"><span>⚙</span><div><b>Configuración</b><small>Modo claro u oscuro</small></div><strong>→</strong></button>
+       </div></div>
+      </div>
+     </div>
+
+     <div class="home-quick">
+      <div class="section-title">
+       <div>
+        <small class="eyebrow">ACCESOS RÁPIDOS</small>
+        <h2>Explora por categoría</h2>
+       </div>
+       <span class="home-live">● Catálogo activo</span>
+      </div>
+      <div class="quick-grid">
+       <button class="quick-card" data-home-search="Nutrición Especializada">
+        <span class="quick-icon">✦</span><b>Nutrición</b><small>Descubre opciones de OMNILIFE</small><span>Explorar →</span>
+       </button>
+       <button class="quick-card" data-home-search="Facial">
+        <span class="quick-icon">✿</span><b>Cuidado facial</b><small>Rutinas de SEYTÚ</small><span>Explorar →</span>
+       </button>
+       <button class="quick-card" data-home-search="Bebidas Refrescantes">
+        <span class="quick-icon">◌</span><b>Bebidas</b><small>Opciones para tu día</small><span>Explorar →</span>
+       </button>
+       <button class="quick-card" data-home-search="Línea System">
+        <span class="quick-icon">◇</span><b>Línea System</b><small>Cuidado especializado</small><span>Explorar →</span>
+       </button>
+      </div>
+     </div>
+
+     <div class="home-feature-row">
+      <div class="home-feature">
+       <span class="feature-number">01</span><div><b>Catálogo organizado</b><p>Filtra por línea, categoría, precio y nombre sin perder tus productos.</p></div>
+      </div>
+      <div class="home-feature">
+       <span class="feature-number">02</span><div><b>Carrito interactivo</b><p>Aumenta, reduce o elimina unidades desde cualquier vista del pedido.</p></div>
+      </div>
+      <div class="home-feature">
+       <span class="feature-number">03</span><div><b>Favoritos guardados</b><p>Marca productos para encontrarlos rápidamente cuando vuelvas.</p></div>
+      </div>
+     </div>
+
+     <div class="home-promo">
+      <div>
+       <small class="eyebrow">EXPERIENCIA DIGITAL</small>
+       <h3>Tu tienda, más simple y más visual.</h3>
+       <p>Consulta productos, prepara tu carrito y revisa tus compras desde un solo lugar.</p>
+      </div>
+      <div class="promo-actions">
+       <button class="btn light" data-go="favoritos">♡ Mis favoritos</button>
+       <button class="btn primary" data-go="catalogo">Ver catálogo →</button>
+      </div>
+     </div>
+
+     <div class="home-info-grid">
+      <div class="info-card">
+       <span>⚡</span><div><b>Actualización rápida</b><small>Los cambios del catálogo se reflejan en las vistas principales.</small></div>
+      </div>
+      <div class="info-card">
+       <span>🛍</span><div><b>Compra paso a paso</b><small>Agrega productos, ajusta cantidades y revisa el total antes de continuar.</small></div>
+      </div>
+      <div class="info-card">
+       <span>◷</span><div><b>Consulta cuando quieras</b><small>Tu catálogo permanece disponible para explorar desde computadora o móvil.</small></div>
+      </div>
+     </div>
+
+     <div class="home-tip">
+      <div class="tip-icon">💡</div>
+      <div><small class="eyebrow">TIP RÁPIDO</small><b id="homeTipTitle">Encuentra lo que buscas</b><p id="homeTipText">Usa los filtros del catálogo para localizar productos con menos pasos.</p></div>
+      <button class="link" id="nextHomeTip">Otro tip ↻</button>
+     </div>
+
+     <div class="mini-banner">
+      <div>
+       <small class="eyebrow">
+        TU PEDIDO
+       </small>
+       <h3>
+        &iquest;Ya sabes qu&eacute; quieres?
+       </h3>
+       <p>
+        Agrega productos, revisa cantidades y contin&uacute;a al pago.
+       </p>
+      </div>
+      <button class="btn primary" data-go="pedido">
+       Revisar pedido
+      </button>
+     </div>
+    </section>
+    <section class="section" id="catalogo">
+     <div class="section-title big">
+      <div>
+       <small class="eyebrow">
+        CAT&Aacute;LOGO
+       </small>
+       <h2>
+        Encuentra tu producto.
+       </h2>
+       <p>
+        Filtra por empresa, categor&iacute;a o busca por nombre.
+       </p>
+      </div>
+      <div class="brand-switch">
+       <button class="active" data-brand="todos">
+        Todos
+       </button>
+       <button data-brand="OMNILIFE">
+        OMNILIFE
+       </button>
+       <button data-brand="SEYT&Uacute;">
+        SEYT&Uacute;
+       </button>
+      </div>
+     </div>
+     <div class="filters">
+      <input id="search" placeholder="🔎 Buscar producto&hellip;" type="search">
+      <select id="category">
+       <option value="todos">
+        Todas las categor&iacute;as
+       </option>
+      </select>
+      <select id="sort">
+       <option value="default">
+        M&aacute;s relevantes
+       </option>
+       <option value="low">
+        Precio menor
+       </option>
+       <option value="high">
+        Precio mayor
+       </option>
+       <option value="name">
+        Nombre A-Z
+       </option>
+      </select>
+     </div>
+     <div class="catalog-note">
+      💡 Los precios mostrados son referenciales para el proyecto y pueden variar seg&uacute;n pa&iacute;s, distribuidor y disponibilidad.
+     </div>
+     <div class="grid" id="catalog">
+     </div>
+    </section>
+    <section class="section" id="favoritos">
+     <div class="section-title big">
+      <div>
+       <small class="eyebrow">
+        GUARDADOS
+       </small>
+       <h2>
+        Mis favoritos.
+       </h2>
+      </div>
+     </div>
+     <div class="grid" id="favorites">
+     </div>
+    </section>
+    <section class="section" id="pedido">
+     <div class="section-title big">
+      <div>
+       <small class="eyebrow">
+        TU COMPRA
+       </small>
+       <h2>
+        Mi pedido.
+       </h2>
+       <p>
+        Tambi&eacute;n puedes revisar el carrito desde el bot&oacute;n superior, sin salir de la pantalla.
+       </p>
+      </div>
+     </div>
+     <div id="cart">
+     </div>
+    </section>
+    <section class="section" id="historial">
+     <div class="section-title big">
+      <div>
+       <small class="eyebrow">
+        HISTORIAL
+       </small>
+       <h2>
+        Mis compras.
+       </h2>
+      </div>
+     </div>
+     <div id="history">
+     </div>
+    </section>
+    <section class="section" id="opiniones">
+     <div class="section-title big">
+      <div>
+       <small class="eyebrow">
+        FORO OMNILIFE &middot; SEYT&Uacute;
+       </small>
+       <h2>
+        Comparte tu opini&oacute;n.
+       </h2>
+       <p>
+        Tu comentario queda guardado en el foro y se muestra a todos los usuarios.
+       </p>
+      </div>
+     </div>
+     <div class="feedback-card feedback-card-plus">
+      <div class="feedback-hero-plus"><div><small class="eyebrow">FORO OMNILIFE × SEYTÚ</small><h3>Tu opinión también mejora la experiencia.</h3><p>Valora productos, atención, entrega y catálogo. Tus comentarios ayudan a conocer qué funciona mejor.</p></div><div class="feedback-hero-badge"><span>💬</span><b>Tu voz cuenta</b><small>Comparte una experiencia real</small></div></div>
+      <div class="feedback-stats"><div class="feedback-score"><strong id="feedbackAvg">0.0</strong><span>★★★★★</span><small id="feedbackCount">0 opiniones</small></div><div><b>Comparte tu experiencia</b><p>Cuéntanos sobre el producto, la atención, el catálogo o tu compra.</p><div class="feedback-metrics"><span>⭐ Valoración</span><span>🛍 Compra</span><span>💜 Comunidad</span></div></div></div>
+<div class="rating-breakdown"><div class="rating-breakdown-head"><b>Distribución de valoraciones</b><small>Consulta cómo se reparten las opiniones.</small></div><div class="rating-row"><span>5 ★</span><i><em id="ratingBar5"></em></i><b id="ratingNum5">0</b></div><div class="rating-row"><span>4 ★</span><i><em id="ratingBar4"></em></i><b id="ratingNum4">0</b></div><div class="rating-row"><span>3 ★</span><i><em id="ratingBar3"></em></i><b id="ratingNum3">0</b></div><div class="rating-row"><span>2 ★</span><i><em id="ratingBar2"></em></i><b id="ratingNum2">0</b></div><div class="rating-row"><span>1 ★</span><i><em id="ratingBar1"></em></i><b id="ratingNum1">0</b></div></div><div class="feedback-form-grid"><div><small class="field-label">Tu valoración</small><div class="rating" id="rating"><button data-rate="1" aria-label="1 estrella">&starf;</button><button data-rate="2" aria-label="2 estrellas">&starf;</button><button data-rate="3" aria-label="3 estrellas">&starf;</button><button data-rate="4" aria-label="4 estrellas">&starf;</button><button data-rate="5" aria-label="5 estrellas">&starf;</button></div></div><label>Tipo de opinión<select id="feedbackType"><option>Producto</option><option>Atención</option><option>Entrega</option><option>Catálogo</option><option>Experiencia general</option></select></label><label>¿Qué aspecto quieres destacar?<select id="feedbackAspect"><option>Experiencia general</option><option>Calidad del producto</option><option>Presentación</option><option>Atención</option><option>Entrega</option><option>Facilidad de compra</option><option>Catálogo</option></select></label><label>¿Lo recomendarías?<select id="feedbackRecommend"><option value="sin">Selecciona una opción</option><option value="si">Sí, lo recomendaría</option><option value="no">No, no lo recomendaría</option></select></label></div><label>Título de tu opinión<input id="commentTitle" placeholder="Ej.: Me gustó mucho el producto" maxlength="80"></label><label>Comentario<textarea id="comment" placeholder="Escribe aquí tu opinión…" rows="9" maxlength="1200"></textarea></label><div class="feedback-tools"><span id="commentCounter">0/1200</span><span>💡 Sé claro y respetuoso</span></div><button class="btn primary" id="sendFeedback">Publicar opinión</button><div class="feedback-community-tools"><div><b>Explora el foro</b><small>Filtra las experiencias y descubre qué aspectos comentan más.</small></div><div class="feedback-filters"><select id="feedbackSort"><option value="recent">Más recientes</option><option value="high">Mayor valoración</option><option value="low">Menor valoración</option></select></div></div><div class="feedback-list" id="feedbackList"></div>
+      <div class="feedback-help-grid"><div><span>💡</span><div><b>¿Qué puedes contar?</b><small>Calidad de la experiencia, facilidad de compra, presentación, entrega o atención.</small></div></div><div><span>🛡</span><div><b>Opiniones responsables</b><small>Evita compartir datos personales, contraseñas o información privada.</small></div></div><div><span>📣</span><div><b>Recomendación</b><small>Una opinión concreta y respetuosa resulta más útil para otros clientes.</small></div></div></div>
+     </div>
+    </section>
+    <section class="section" id="cuenta">
+     <div class="account">
+      <div class="avatar xl avatar-editable" id="accountAvatar" title="Cambiar foto de perfil">
+       I
+       <button type="button" class="avatar-edit-btn" data-avatar-trigger aria-label="Cambiar foto">✎</button>
+      </div>
+      <small class="eyebrow">
+       MI CUENTA
+      </small>
+      <h2 id="accountName">
+       Invitado
+      </h2>
+      <p id="accountEmail">
+       Modo invitado
+      </p>
+      <div class="data-grid">
+       <div>
+        <small>
+         Nombres
+        </small>
+        <b id="accountNames">
+         &mdash;
+        </b>
+       </div>
+       <div>
+        <small>
+         Apellidos
+        </small>
+        <b id="accountLast">
+         &mdash;
+        </b>
+       </div>
+       <div>
+        <small>
+         Correo
+        </small>
+        <b id="accountMail">
+         &mdash;
+        </b>
+       </div>
+       <div>
+        <small>
+         Tel&eacute;fono registrado
+        </small>
+        <b id="accountPhoneMain">
+         &mdash;
+        </b>
+       </div>
+       <div>
+        <small>
+         Estado
+        </small>
+        <b class="ok">
+         Sesi&oacute;n activa
+        </b>
+       </div>
+       <div class="account-inline-actions"><button class="btn light" type="button" data-avatar-trigger>✎ Cambiar imagen</button><button class="ghost" type="button" data-remove-avatar>Quitar imagen</button><button class="btn light" type="button" data-go="config">⚙ Editar mis datos</button></div>
+      </div>
+     </div>
+    </section>
+    <section class="section" id="config">
+     <div class="section-title big">
+      <div>
+       <small class="eyebrow">
+        TU CUENTA
+       </small>
+       <h2>
+        Configuraci&oacute;n.
+       </h2>
+       <p>
+        Personaliza tu experiencia, tu cuenta y las preferencias del cat&aacute;logo.
+       </p>
+      </div>
+     </div>
+     <div class="user-settings-layout">
+      <div class="settings-profile settings-profile-premium">
+       <div class="settings-ribbon">✨ TU ESPACIO PERSONAL</div>
+       <div class="settings-profile-top">
+        <div class="avatar xl avatar-editable" id="settingsAvatar" title="Cambiar foto de perfil">
+         I
+         <button type="button" class="avatar-edit-btn" data-avatar-trigger aria-label="Cambiar foto">✎</button>
+        </div>
+        <div>
+         <span class="eyebrow">
+          PERFIL
+         </span>
+         <h3 id="settingsProfileName">
+          Invitado
+         </h3>
+         <p id="settingsProfileEmail">
+          Modo invitado
+         </p>
+        </div>
+       </div>
+       <div class="avatar-tools">
+        <button class="btn light" type="button" data-avatar-trigger>✎ Cambiar imagen</button>
+        <button class="ghost" type="button" id="removeAvatar">Quitar imagen</button>
+        <input class="hidden" id="avatarFile" type="file" accept="image/png,image/jpeg,image/webp,image/gif">
+       </div>
+       <div class="profile-details">
+        <div>
+         <small>
+          Usuario
+         </small>
+         <b id="settingsUsername">
+          &mdash;
+         </b>
+        </div>
+        <div>
+         <small>
+          Teléfono
+         </small>
+         <b id="accountPhone">
+          &mdash;
+         </b>
+        </div>
+        <div>
+         <small>
+          Estado
+         </small>
+         <b class="ok">
+          Cuenta activa
+         </b>
+        </div>
+       </div>
+      </div>
+      <div class="settings-card settings-account-card">
+       <div class="settings-card-title"><div><span class="setting-icon">👤</span><div><b>Datos de mi cuenta</b><small>Edita todos tus datos: nombres, apellidos, usuario, correo, teléfono, contraseña e imagen de perfil.</small></div></div></div>
+       <div class="settings-form-grid account-fields-grid">
+        <label>Nombres<input id="profileNameEdit" autocomplete="given-name"></label>
+        <label>Apellidos<input id="profileLastEdit" autocomplete="family-name"></label>
+        <label>Usuario<input id="profileUsernameEdit" autocomplete="username"></label>
+        <label>Correo electrónico<input id="profileEmailEdit" type="email" autocomplete="email"></label>
+        <label>Teléfono<input id="profilePhoneEdit" type="tel" autocomplete="tel" maxlength="20"></label>
+       </div>
+       <button class="btn primary" type="button" id="saveProfileData">Guardar datos</button>
+       <div class="settings-divider"></div>
+       <div class="settings-card-title compact"><div><span class="setting-icon">🔒</span><div><b>Contraseña</b><small>Actualiza tu contraseña cuando quieras.</small></div></div></div>
+       <div class="settings-form-grid password-fields-grid">
+        <label>Contraseña actual<input id="profileCurrentPass" type="password" autocomplete="current-password"></label>
+        <label>Nueva contraseña<input id="profileNewPass" type="password" minlength="6" autocomplete="new-password"></label>
+        <label>Confirmar contraseña<input id="profileNewPass2" type="password" minlength="6" autocomplete="new-password"></label>
+       </div>
+       <button class="btn primary" type="button" id="saveProfilePassword">Guardar nueva contraseña</button>
+       <p class="settings-msg" id="profileSettingsMsg"></p>
+      </div>
+      <div class="settings-card">
+       <div class="settings-card-title">
+        <div>
+         <span class="setting-icon">
+          🎨
+         </span>
+         <div>
+          <b>
+           Apariencia
+          </b>
+          <small>
+           Personaliza c&oacute;mo se ve la interfaz.
+          </small>
+         </div>
+        </div>
+       </div>
+       <div class="appearance-grid">
+        <button class="appearance-option active" data-theme="light">
+         <span>
+          ☀️
+         </span>
+         <b>
+          Claro
+         </b>
+         <small>
+          Interfaz luminosa
+         </small>
+        </button>
+        <button class="appearance-option" data-theme="dark">
+         <span>
+          🌙
+         </span>
+         <b>
+          Oscuro
+         </b>
+         <small>
+          Menos brillo
+         </small>
+        </button>
+       </div>
+      </div>
+     </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-main-grid">
+        <section class="footer-column footer-brand-column">
+          <div class="footer-brand">
+            <img src="assets/logo.jpeg" alt="OMNILIFE × SEYTÚ">
+            <div><strong>OMNILIFE × SEYTÚ</strong><small>GENTE QUE CUIDA A LA GENTE · CUIDA TU BELLEZA</small></div>
+          </div>
+          <div class="footer-title">Encuéntranos en</div>
+          <div class="social-row footer-social-links">
+            <a href="https://www.facebook.com/OmnilifeOficialMexico" target="_blank" rel="noopener noreferrer" aria-label="Facebook oficial de OMNILIFE" title="Facebook">f</a>
+            <a href="https://www.instagram.com/omnilifeoficial/" target="_blank" rel="noopener noreferrer" aria-label="Instagram oficial de OMNILIFE" title="Instagram">◎</a>
+            <a href="https://www.youtube.com/@omnilifeoficial" target="_blank" rel="noopener noreferrer" aria-label="YouTube oficial de OMNILIFE" title="YouTube">▶</a>
+            <a href="https://www.tiktok.com/@omnilifeoficial" target="_blank" rel="noopener noreferrer" aria-label="TikTok oficial de OMNILIFE" title="TikTok">♪</a>
+            <a href="https://wa.me/523333926520?text=Hola%20OMNILIFE%2C%20necesito%20informaci%C3%B3n" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de OMNILIFE" title="WhatsApp">WA</a>
+            <a href="tel:080000664" aria-label="Llamar a OMNILIFE Perú" title="Teléfono OMNILIFE Perú">☎</a>
+          </div>
+          <div class="footer-social-handles">
+            <span>Facebook · Instagram · YouTube · TikTok</span>
+            <span>WhatsApp · Teléfono</span>
+          </div>
+          <div class="footer-contact-card">
+            <b>Atención OMNILIFE Perú</b>
+            <a href="tel:080000664">☎ CREO: 0800 00 664</a>
+            <a href="tel:080000185">☎ Nutre tu Vida: 0 800 00185</a>
+            <a href="https://portal.omnilife.com/contacto" target="_blank" rel="noopener noreferrer">Ver todos los medios de contacto →</a>
+          </div>
+        </section>
+
+        <section class="footer-column">
+          <div class="footer-title">Información general</div>
+          <a href="https://portal.omnilife.com/" target="_blank" rel="noopener noreferrer">Grupo OMNILIFE</a>
+          <a href="https://portal.omnilife.com/cuidar-bienestar" target="_blank" rel="noopener noreferrer">Cuidar mi bienestar</a>
+          <a href="https://compra.omnilife.com/" target="_blank" rel="noopener noreferrer">Compra en línea</a>
+          <a href="https://www.omnilife.com/registro-cliente" target="_blank" rel="noopener noreferrer">Registro de cliente</a>
+          <a href="https://portal.omnilife.com/" target="_blank" rel="noopener noreferrer">Empresa Socialmente Responsable</a>
+        </section>
+
+        <section class="footer-column">
+          <div class="footer-title">Servicio al cliente</div>
+          <a href="https://creoomnilife.zendesk.com/hc/es-419" target="_blank" rel="noopener noreferrer">Centro de Ayuda</a>
+          <a href="https://portal.omnilife.com/contacto" target="_blank" rel="noopener noreferrer">Contacto</a>
+          <a href="https://portal.omnilife.com/politicas-de-privacidad" target="_blank" rel="noopener noreferrer">Políticas de Privacidad</a>
+          <a href="https://portal.omnilife.com/terminos-y-condiciones" target="_blank" rel="noopener noreferrer">Términos y Condiciones</a>
+          <a href="https://portal.omnilife.com/politica-compra-devolucion" target="_blank" rel="noopener noreferrer">Política de Compra y Devolución</a>
+          <a href="https://portal.omnilife.com/negocio/compra-por-telefono" target="_blank" rel="noopener noreferrer">Compra por teléfono</a>
+        </section>
+
+        <section class="footer-column">
+          <div class="footer-title">Servicio al empresario</div>
+          <a href="https://portal.omnilife.com/" target="_blank" rel="noopener noreferrer">CEDIS</a>
+          <a href="https://portal.omnilife.com/" target="_blank" rel="noopener noreferrer">Código de Ética y Conducta</a>
+          <a href="https://portal.omnilife.com/" target="_blank" rel="noopener noreferrer">Revista OM Magazine</a>
+          <a href="https://portal.omnilife.com/" target="_blank" rel="noopener noreferrer">Seguimiento de pedidos</a>
+          <a href="mailto:creo@omnilife.com">Correo CREO: creo@omnilife.com</a>
+          <a href="mailto:contacto@seytu.com">Correo SEYTÚ: contacto@seytu.com</a>
+        </section>
+      </div>
+
+      <div class="footer-partners footer-partners-wide">
+        <div class="footer-title">Empresas y asociaciones</div>
+        <div class="partner-logos">
+          <span>COMEXPERU</span><span>CAPEVEDI</span><span>CCL ASOCIADO</span><span>WFDSA MEMBER</span><span>OMNILIFE · SEYTÚ</span>
+        </div>
+        <small>OMNILIFE PERÚ S.A.C. · RUC 20290314799 · Av. Inglaterra 3089 I, Guadalajara, Jalisco, México.</small>
+      </div>
+      <div class="footer-bottom"><span>© 2026 OMNILIFE × SEYTÚ · Proyecto académico</span><span><a href="https://portal.omnilife.com/" target="_blank" rel="noopener noreferrer">Ayuda</a> · <a href="https://portal.omnilife.com/terminos-y-condiciones" target="_blank" rel="noopener noreferrer">Términos</a> · <a href="https://portal.omnilife.com/politicas-de-privacidad" target="_blank" rel="noopener noreferrer">Privacidad</a></span></div>
+    </footer>
+   </main>
+   <button class="back-top" id="backTop" type="button" aria-label="Volver arriba">↑<small>Arriba</small></button>
+  </div>
+
+  <div class="admin-panel hidden" id="adminPanel">
+   <aside class="admin-sidebar">
+    <button class="admin-mobile-close" id="adminMobileClose" type="button" aria-label="Cerrar menú">×</button>
+    <div class="admin-brand">
+     <img alt="Logo OMNILIFE SEYTÚ" src="assets/logo.jpeg">
+     <div>
+      <b>OMNILIFE × SEYTÚ</b>
+      <small>CENTRO DE GESTIÓN</small>
+     </div>
+    </div>
+
+    <div class="admin-menu-title">MENÚ PRINCIPAL</div>
+    <nav class="admin-nav-list">
+     <button class="admin-nav active" data-admin-go="dashboard"><span class="nav-icon">⌂</span><span>Resumen</span></button>
+     <button class="admin-nav" data-admin-go="orders"><span class="nav-icon">🛒</span><span>Pedidos</span><b id="adminOrderCount">0</b></button>
+     <button class="admin-nav" data-admin-go="users"><span class="nav-icon">♟</span><span>Usuarios</span><b id="adminUserCount">0</b></button>
+      <button class="admin-nav" data-admin-go="settings"><span class="nav-icon">⚙</span><span>Configuración de administrador</span></button>
+    </nav>
+
+    <div class="admin-side-note">
+     <span>●</span>
+     <div><b>Datos conectados</b><small>Productos, stock y pedidos sincronizados.</small></div>
+    </div>
+
+    <div class="admin-side-bottom">
+     <div class="avatar avatar-editable admin-avatar" id="adminAvatar" title="Cambiar imagen del administrador">A<button type="button" class="avatar-edit-btn" data-admin-avatar-trigger aria-label="Cambiar foto">✎</button></div>
+     <div><b id="adminSideName">Administrador</b><small id="adminSideEmail">admin@omnilife.local</small></div>
+     <button id="adminLogout">↪ Cerrar sesión</button>
+     <input class="hidden" id="adminAvatarFile" type="file" accept="image/png,image/jpeg,image/webp,image/gif">
+    </div>
+   </aside>
+
+   <main class="admin-main">
+    <header class="admin-topbar">
+     <button class="admin-mobile-menu" id="adminMobileMenu" type="button" aria-label="Abrir menú de administración" aria-expanded="false">
+      <span></span><span></span><span></span>
+     </button>
+     <div class="admin-breadcrumb">
+      <small class="eyebrow">ADMINISTRACIÓN</small>
+      <strong id="adminPageTitle">Resumen general</strong>
+     </div>
+     <div class="admin-top-actions">
+      <span class="sync-badge">● Datos centralizados</span>
+      <button class="theme-toggle-admin" id="adminDarkMode" type="button" aria-label="Cambiar modo de color"><span>🌙</span><b>Modo oscuro</b></button>
+     </div>
+    </header>
+
+    <div class="admin-section active" id="adminDashboard">
+     <div class="admin-heading admin-hero-heading">
+      <div>
+       <small class="eyebrow">CENTRO DE CONTROL</small>
+       <h1>Todo bajo control.</h1>
+       <p>Gestiona el catálogo, controla el stock, revisa pedidos y administra usuarios desde un solo panel.</p>
+      </div>
+      <div class="admin-live-card"><span>●</span><div><b>Sistema activo</b><small>Catálogo conectado</small></div></div>
+     </div>
+
+     <div class="admin-stats">
+      <div class="stat-highlight"><span class="stat-icon">🛍</span><small>Pedidos registrados</small><b id="adminOrdersStat">0</b><em>Ventas realizadas</em></div>
+      <div><span class="stat-icon">📦</span><small>Productos activos</small><b id="adminProductsStat">0</b><em>En el catálogo</em></div>
+      <div><span class="stat-icon">♟</span><small>Usuarios</small><b id="adminUsersStat">0</b><em>Clientes registrados</em></div>
+      <div><span class="stat-icon">▣</span><small>Stock total</small><b id="adminStockStat">0</b><em>Unidades disponibles</em></div>
+     </div>
+
+     <div class="admin-dashboard-grid">
+      <div class="admin-list admin-main-card">
+       <div class="admin-list-head"><div><b>Productos del catálogo</b><small>Administra precio, stock, imagen y datos desde este Resumen.</small></div><button class="btn admin-primary" id="adminAddProductDashboard" type="button" onclick="window.__omniOpenProductModal(event)" >＋ Agregar Productos</button></div>
+       <div id="adminProductsTable"></div>
+      </div>
+      <div class="admin-side-card">
+       <div class="side-card-title"><span>⚡</span><div><b>Acciones rápidas</b><small>Gestiona tu tienda</small></div></div>
+       <button class="quick-action" id="adminQuickAddProduct" type="button" onclick="window.__omniOpenProductModal(event)" ><span>📦</span><div><b>Agregarr producto</b><small>Imagen, precio, stock, categoría y descripción</small></div><strong>＋</strong></button>
+       <button class="quick-action" data-admin-go="orders"><span>🛒</span><div><b>Revisar pedidos</b><small>Historial completo de compras y boletas</small></div><strong>→</strong></button>
+       <button class="quick-action" data-admin-go="users"><span>♟</span><div><b>Administrar usuarios</b><small>Clientes y administradores</small></div><strong>→</strong></button>
+       <div class="connection-box"><b>Conexión automática</b><span>✓</span><small>Los productos y pedidos se leen de MySQL. Los cambios del administrador se reflejan en el catálogo de los usuarios.</small></div>
+      </div>
+     </div>
+    </div>
+
+    <div class="admin-section" id="adminOrders">
+     <div class="admin-heading"><div><small class="eyebrow">VENTAS</small><h1>Pedidos y boletas.</h1><p>Cada compra confirmada descuenta stock y queda registrada aquí.</p></div><div class="admin-heading-actions"><span class="orders-live-label">● Actualización automática</span><button class="btn admin-primary" data-admin-refresh-orders>↻ Actualizar</button></div></div>
+     <div class="admin-list" id="adminOrdersFull"></div>
+    </div>
+
+    <div class="admin-section" id="adminUsers">
+     <div class="admin-heading"><div><small class="eyebrow">CLIENTES</small><h1>Usuarios.</h1><p>Consulta, crea y cambia el tipo de cuenta de cada usuario. Los administradores también podrán ingresar al panel de gestión.</p></div><button class="btn admin-primary" id="adminQuickUserTop" type="button" data-admin-open-user>＋ Añadir usuario</button></div>
+     <div class="admin-list" id="adminUsersFull"></div>
+    </div>
+
+    <div class="admin-section" id="adminSettings">
+     <div class="admin-heading"><div><small class="eyebrow">ADMINISTRACIÓN · CUENTA</small><h1>Configuración de administrador.</h1><p>Administra los datos de la cuenta que está registrada como administrador y guarda los cambios directamente en MySQL.</p></div></div>
+     <div class="settings-card settings-account-card admin-settings-account-card">
+      <div class="settings-card-title"><div><span class="setting-icon">👤</span><div><b>Datos de mi cuenta</b><small>Edita todos los datos registrados del administrador: nombres, apellidos, usuario, correo, teléfono, contraseña e imagen de perfil.</small></div></div></div>
+      <div class="admin-profile-head admin-settings-inline-profile"><div class="avatar xl avatar-editable" id="adminSettingsAvatar">A<button type="button" class="avatar-edit-btn" data-admin-avatar-trigger aria-label="Cambiar foto">✎</button></div><div><span class="eyebrow">CUENTA ADMINISTRADOR</span><h3 id="adminSettingsName">Administrador</h3><p id="adminSettingsEmail">admin@omnilife.local</p><span class="admin-account-badge">● Cuenta activa</span></div></div>
+      <div class="settings-form-grid account-fields-grid admin-account-fields-grid">
+       <label>Nombres<input id="adminNameEdit" autocomplete="given-name"></label>
+       <label>Apellidos<input id="adminLastEdit" autocomplete="family-name"></label>
+       <label>Usuario<input id="adminUsernameEdit" autocomplete="username"></label>
+       <label>Correo electrónico<input id="adminEmailEdit" type="email" autocomplete="email"></label>
+       <label>Teléfono<input id="adminPhoneEdit" type="tel" autocomplete="tel" maxlength="20"></label>
+      </div>
+      <button class="btn primary" type="button" id="saveAdminData">Guardar datos</button>
+      <div class="settings-divider"></div>
+      <div class="settings-card-title compact"><div><span class="setting-icon">🔒</span><div><b>Contraseña</b><small>La contraseña actual se muestra protegida y puedes cambiarla cuando quieras.</small></div></div></div>
+      <div class="settings-form-grid password-fields-grid">
+       <label>Contraseña actual<input id="adminCurrentPass" type="password" autocomplete="current-password"></label>
+       <label>Nueva contraseña<input id="adminNewPass" type="password" minlength="6" autocomplete="new-password"></label>
+       <label>Confirmar contraseña<input id="adminNewPass2" type="password" minlength="6" autocomplete="new-password"></label>
+      </div>
+      <button class="btn primary" type="button" id="saveAdminPassword">Guardar nueva contraseña</button>
+      <div class="avatar-tools admin-avatar-tools"><button class="btn light" type="button" data-admin-avatar-trigger>✎ Cambiar imagen</button><button class="ghost" type="button" id="removeAdminAvatar">Quitar imagen</button></div>
+      <input class="hidden" id="adminAvatarFile2" type="file" accept="image/png,image/jpeg,image/webp,image/gif">
+      <p class="settings-msg" id="adminSettingsMsg"></p>
+     </div>
+    </div>
+
+    <div class="admin-section" id="adminFavorites">
+     <div class="admin-heading"><div><small class="eyebrow">PREFERENCIAS</small><h1>Favoritos.</h1><p>Productos guardados por los clientes en este navegador.</p></div></div>
+     <div class="admin-list" id="adminFavoritesList"></div>
+    </div></div>
+
+   </main>
+  </div>
+  <div class="modal hidden" id="adminUserCreateModal">
+   <div class="modal-card admin-edit-modal-card admin-create-account-card">
+    <button class="close" data-close="adminUserCreateModal">&times;</button>
+    <div class="admin-create-account-head"><span class="admin-create-account-icon">✦</span><div><small class="eyebrow">NUEVA CUENTA</small><h2>Añadir usuario</h2></div></div>
+    <p class="admin-edit-help">La cuenta se guarda directamente en MySQL y podrá iniciar sesión desde el catálogo.</p>
+    <div class="admin-edit-grid">
+      <label>Nombres<input id="adminUserName" autocomplete="given-name"></label>
+      <label>Apellidos<input id="adminUserLast" autocomplete="family-name"></label>
+      <label>Usuario<input id="adminUserUsername" autocomplete="username"></label>
+      <label>Correo<input id="adminUserEmail" type="email" autocomplete="email"></label>
+      <label>Teléfono<input id="adminUserPhone" autocomplete="tel"></label>
+      <label>Contraseña<input id="adminUserPass" type="password" minlength="6" placeholder="Mínimo 6 caracteres" autocomplete="new-password"></label>
+      <label>Confirmar contraseña<input id="adminUserPassConfirm" type="password" minlength="6" placeholder="Repite tu contraseña" autocomplete="new-password"></label>
+      <label>Tipo de cuenta<select id="adminUserRole"><option value="cliente">Cliente</option><option value="admin">Administrador</option></select></label>
+    </div>
+    <div class="admin-edit-actions">
+      <button class="btn light" data-close="adminUserCreateModal">Cancelar</button>
+      <button class="btn admin-primary" id="adminUserCreateSave" type="button">Crear usuario</button>
+    </div>
+    <div class="msg" id="adminUserMsg"></div>
+   </div>
+  </div>
+  <div class="modal hidden" id="adminProductEditModal">
+   <div class="modal-card admin-edit-modal-card">
+    <button class="close" data-close="adminProductEditModal">&times;</button>
+    <small class="eyebrow">ADMINISTRACIÓN · PRODUCTO</small>
+    <h2>Editar producto</h2>
+    <p class="admin-edit-help">Cualquier cambio guardado aquí se envía a MySQL y luego se sincroniza con el catálogo de los clientes.</p>
+    <div class="admin-edit-grid">
+      <label>Nombre<input id="adminEditName"></label>
+      <label>Categoría<input id="adminEditCat"></label>
+      <label>Precio<input id="adminEditPrice" type="number" min="0" step="0.01"></label>
+      <label>Stock<input id="adminEditStock" type="number" min="0" step="1"></label>
+      <label>Estado<select id="adminEditStatus"><option>Disponible</option><option>Agotado</option><option>Oculto</option></select></label>
+      <label>Imagen (URL o ruta)<input id="adminEditImg" placeholder="assets/IMG/imagen-01.png"></label>
+      <label>Subir imagen<input id="adminEditImageFile" type="file" accept="image/png,image/jpeg,image/webp,image/gif"></label>
+      <label class="full">Descripción<textarea id="adminEditDesc" rows="5"></textarea></label>
+    </div>
+    <div class="admin-edit-actions"><button class="btn light" data-close="adminProductEditModal">Cancelar</button><button class="btn admin-primary" id="adminEditSave" type="button">Guardar cambios</button></div>
+    <input type="hidden" id="adminEditId">
+   </div>
+  </div>
+  <div class="modal hidden" id="adminProductCreateModal">
+   <div class="modal-card admin-edit-modal-card">
+    <button class="close" data-close="adminProductCreateModal">&times;</button>
+    <small class="eyebrow">ADMINISTRACIÓN · NUEVO PRODUCTO</small>
+    <h2>Agregar Producto</h2>
+    <p class="admin-edit-help">El producto se guarda directamente en MySQL. Después aparecerá automáticamente en el catálogo conectado.</p>
+    <div class="admin-edit-grid">
+      <label>Marca<select id="adminCreateBrand"><option value="">Selecciona una marca</option><option value="OMNILIFE">OMNILIFE</option><option value="SEYTÚ">SEYTÚ</option></select></label>
+      <label>Categoría<select id="adminCreateCat"><option value="">Selecciona una categoría</option></select></label>
+      <div class="admin-category-manager full" id="adminCategoryManager">
+        <div class="admin-category-title"><b>Categorías de la marca seleccionada</b><small>Al elegir OMNILIFE o SEYTÚ, aquí aparecen todas sus categorías guardadas.</small></div>
+        <div class="admin-category-new"><span class="admin-category-question">¿Quieres agregar otra categoría?</span><button class="btn light" id="adminCreateCategory" type="button">＋ Crear categoría</button></div>
+        <div class="admin-category-list" id="adminCategoryList"></div>
+      </div>
+      <label>Nombre<input id="adminCreateName" placeholder="Nombre del producto"></label>
+      <label>Precio<input id="adminCreatePrice" type="number" min="0" step="0.01" value="0"></label>
+      <label>Stock<input id="adminCreateStock" type="number" min="0" step="1" value="0"></label>
+      <label>Estado<select id="adminCreateStatus"><option>Disponible</option><option>Agotado</option><option>Oculto</option></select></label>
+      <label class="full">Subir imagen<input id="adminCreateImageFile" type="file" accept="image/png,image/jpeg,image/webp,image/gif"></label>
+      <label class="full">Descripción<textarea id="adminCreateDesc" rows="5" placeholder="Descripción del producto"></textarea></label>
+    </div>
+    <div class="admin-edit-actions"><button class="btn light" data-close="adminProductCreateModal">Cancelar</button><button class="btn admin-primary" id="adminCreateSave" type="button" onclick="window.__omniSaveProduct(event)" >Guardar producto</button></div>
+   </div>
+  </div>
+  <div class="modal hidden" id="adminCategoryCreateModal" aria-hidden="true">
+   <div class="modal-card admin-category-modal-card">
+    <button class="close" data-close="adminCategoryCreateModal" type="button">&times;</button>
+    <small class="eyebrow">ADMINISTRACIÓN · CATEGORÍA</small>
+    <h2>Crear categoría</h2>
+    <p class="admin-edit-help">La nueva categoría se guardará en MySQL para <b id="adminCategoryBrandLabel">OMNILIFE</b> y quedará disponible para sus productos.</p>
+    <label class="admin-category-modal-label">Nombre de la categoría<input id="adminNewCategoryName" maxlength="100" placeholder="Ej. Bienestar Integral" autocomplete="off"></label>
+    <div class="admin-edit-actions"><button class="btn light" id="adminCategoryCancel" type="button">Cancelar</button><button class="btn admin-primary" id="adminCategorySave" type="button">Guardar categoría</button></div>
+   </div>
+  </div>
+  <div class="modal hidden" id="productModal">
+   <div class="modal-card product-modal">
+    <button class="close" data-close="productModal">
+     &times;
+    </button>
+    <div id="productDetail">
+    </div>
+   </div>
+  </div>
+  <div class="modal hidden" id="orderDetailModal">
+   <div class="modal-card order-detail-modal">
+    <button class="close" data-close="orderDetailModal">&times;</button>
+    <small class="eyebrow">DETALLE DE COMPRA</small>
+    <h2 id="orderDetailTitle">Pedido</h2>
+    <div class="order-detail-meta" id="orderDetailMeta"></div>
+    <div class="order-detail-table-wrap">
+     <table class="order-detail-table">
+      <thead><tr><th>Producto</th><th>Precio unitario</th><th>Cantidad</th><th>Total</th></tr></thead>
+      <tbody id="orderDetailItems"></tbody>
+     </table>
+    </div>
+    <div class="order-detail-summary" id="orderDetailSummary"></div>
+   </div>
+  </div>
+  <div class="modal cart-popover hidden" id="cartModal">
+   <div class="modal-card cart-modal">
+    <button class="close" data-close="cartModal">
+     &times;
+    </button>
+    <small class="eyebrow">
+     CARRITO
+    </small>
+    <h2>
+     Revisa tu pedido
+    </h2>
+    <div class="scroll-list" id="cartModalList">
+    </div>
+    <div class="checkout-bar">
+     <div>
+      <small>
+       Total
+      </small>
+      <b id="modalTotal">
+       S/ 0.00
+      </b>
+     </div>
+     <button class="btn primary" id="checkout">
+      Continuar al pago &rarr;
+     </button>
+    </div>
+   </div>
+  </div>
+  <div class="modal hidden" id="authRequiredModal">
+   <div class="modal-card auth-required-modal">
+    <button class="close" data-close="authRequiredModal">
+     &times;
+    </button>
+    <div class="success-icon">🔐</div>
+    <small class="eyebrow">ACCIÓN RESTRINGIDA</small>
+    <h2>Debes iniciar sesión.</h2>
+    <p>Como invitado puedes explorar, marcar favoritos y preparar tu carrito. Para pagar, realizar una transacción o modificar datos de tu cuenta, inicia sesión.</p>
+    <button class="btn primary full" id="goLogin">Iniciar sesión →</button>
+    <button class="btn light full" data-close="authRequiredModal">Seguir como invitado</button>
+   </div>
+  </div>
+  <div class="modal hidden" id="paymentModal">
+   <div class="modal-card payment-modal">
+    <button class="close" data-close="paymentModal">
+     &times;
+    </button>
+    <small class="eyebrow">
+     FINALIZAR COMPRA
+    </small>
+    <h2>
+     Elige c&oacute;mo pagar.
+    </h2>
+    <div class="payment-headline"><div><span class="payment-secure">🔒 Compra protegida</span><small>Selecciona un método y completa los datos solicitados.</small></div><strong id="paymentTotalTop">S/ 0.00</strong></div><div class="pay-options"><button class="pay active" data-pay="Yape"><span class="pay-icon">💜</span><b>Yape</b><small>Pago móvil</small></button><button class="pay" data-pay="Plin"><span class="pay-icon">💙</span><b>Plin</b><small>Pago móvil</small></button><button class="pay" data-pay="Tarjeta"><span class="pay-icon">💳</span><b>Tarjeta</b><small>Débito / crédito</small></button><button class="pay" data-pay="QR"><span class="pay-icon">▦</span><b>QR</b><small>Escanear</small></button><button class="pay" data-pay="Transferencia"><span class="pay-icon">🏦</span><b>Transferencia</b><small>Banco</small></button><button class="pay" data-pay="Contra entrega"><span class="pay-icon">📦</span><b>Contra entrega</b><small>Pago al recibir</small></button></div><div class="pay-info" id="payInfo"></div><div class="payment-fields" id="paymentFields"></div><label>Correo para el comprobante<input id="payEmail" placeholder="correo@ejemplo.com" type="email"></label><div class="payment-note">✓ Tus datos se usan solo para completar esta demostración y generar el comprobante.</div><button class="btn primary full" id="confirmPay">Confirmar pago · <span id="confirmPayAmount">S/ 0.00</span></button>
+   </div>
+  </div>
+  <div class="modal hidden" id="successModal">
+   <div class="modal-card success">
+    <div class="success-icon">
+     &checkmark;
+    </div>
+    <small class="eyebrow">
+     PEDIDO CONFIRMADO
+    </small>
+    <h2>
+     &iexcl;Compra realizada!
+    </h2>
+    <p id="successText">
+    </p>
+    <div class="receipt-question" id="receiptQuestion">
+     <strong>¿Deseas ver tu boleto o comprobante?</strong>
+     <small>Tu compra ya fue registrada. Puedes mostrarlo, imprimirlo o guardarlo como PDF.</small>
+     <div class="receipt-question-actions">
+      <button class="btn primary" id="receiptYes">Sí, mostrar boleto</button>
+      <button class="btn light" id="receiptNo">No, continuar</button>
+     </div>
+    </div>
+    <div class="success-actions receipt-options hidden" id="receiptOptions">
+     <button class="btn primary" id="printReceipt">
+      🧾 Imprimir / guardar PDF
+     </button>
+     <button class="btn light" id="viewReceipt">👁️ Ver boleto</button>
+    </div>
+    <div class="success-actions receipt-options hidden" id="receiptShareOptions">
+     <button class="success-secondary" id="whatsappReceipt">💬 Compartir por WhatsApp</button>
+     <button class="success-secondary" id="closeAfterPayment">Cerrar</button>
+    </div>
+   </div>
+  </div>
+  <script src="admin-fix-final.js?v=20260925-07"></script>
+  <script src="script.js?v=20260927-02"></script>
+  <script>
+  // RUTA DIRECTA Y AISLADA PARA AGREGAR PRODUCTOS
+  // No depende del listener general del administrador ni del render del inventario.
+  (function(){
+    function byId(id){ return document.getElementById(id); }
+    window.__omniOpenProductModal = function(ev){
+      if(ev){ ev.preventDefault(); ev.stopPropagation(); }
+      var modal=byId("adminProductCreateModal");
+      if(!modal){ alert("No se encontró el formulario de Nuevo Producto (adminProductCreateModal)."); return false; }
+      modal.classList.remove("hidden");
+      modal.setAttribute("aria-hidden","false");
+      modal.style.setProperty("display","grid","important");
+      modal.style.setProperty("visibility","visible","important");
+      modal.style.setProperty("opacity","1","important");
+      modal.style.setProperty("pointer-events","auto","important");
+      modal.style.setProperty("z-index","2147483000","important");
+      var name=byId("adminCreateName");
+      if(name){ setTimeout(function(){ name.focus(); },50); }
+      return false;
+    };
+    window.__omniCloseProductModal=function(ev){
+      if(ev){ ev.preventDefault(); ev.stopPropagation(); }
+      var modal=byId("adminProductCreateModal");
+      if(!modal)return false;
+      modal.classList.add("hidden");
+      modal.setAttribute("aria-hidden","true");
+      modal.style.removeProperty("display");
+      modal.style.removeProperty("visibility");
+      modal.style.removeProperty("opacity");
+      modal.style.removeProperty("pointer-events");
+      modal.style.removeProperty("z-index");
+      return false;
+    };
+    window.__omniSaveProduct=function(ev){
+      if(ev){ ev.preventDefault(); ev.stopPropagation(); }
+      if(typeof window.adminCreateProductSave === "function") return window.adminCreateProductSave();
+      if(typeof window.omniFallbackCreateProduct === "function") return window.omniFallbackCreateProduct();
+      alert("La función para guardar productos no está cargada. Revisa script.js.");
+      return false;
+    };
+    // Cierre directo de los botones del modal.
+    document.addEventListener("click",function(ev){
+      var close=ev.target && ev.target.closest ? ev.target.closest('[data-close="adminProductCreateModal"]') : null;
+      if(close) window.__omniCloseProductModal(ev);
+    });
+  })();
+  </script>
+  <script src="admin-crud-fix.js?v=20260925-10"></script>
+  <script src="admin-user-direct.js?v=20260925-11"></script>
+  <script src="admin-category-product.js?v=20260925-01"></script>
+ 
+  <div class="omni-confirm-modal hidden" id="omniConfirmModal" aria-hidden="true">
+   <div class="omni-confirm-card" role="dialog" aria-modal="true" aria-labelledby="omniConfirmTitle">
+    <div class="omni-confirm-icon" id="omniConfirmIcon">!</div>
+    <small class="eyebrow">CONFIRMAR ACCIÓN</small>
+    <h3 id="omniConfirmTitle">¿Quieres continuar?</h3>
+    <p id="omniConfirmText">Esta acción requiere confirmación.</p>
+    <div class="omni-confirm-actions"><button type="button" class="btn light" id="omniConfirmCancel">Cancelar</button><button type="button" class="btn admin-danger" id="omniConfirmOk">Quitar</button></div>
+   </div>
+  </div>
+</body>
+</html>

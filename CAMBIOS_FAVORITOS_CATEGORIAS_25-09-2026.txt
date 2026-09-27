@@ -1,0 +1,29 @@
+OMNILIFE × SEYTÚ — FAVORITOS Y CATEGORÍAS
+
+1. FAVORITOS
+- Se agregaron las acciones MySQL favorites, favorite_add, favorite_remove y favorites_clear.
+- Los favoritos de usuarios autenticados se guardan en la tabla favoritos.
+- Al iniciar sesión se vuelven a cargar desde MySQL.
+- El resumen de favoritos del administrador usa los favoritos reales de la base de datos.
+
+2. CATEGORÍAS DEL CATÁLOGO
+- Todas las categorías se muestran cuando la empresa seleccionada es "Todos".
+- Al seleccionar OMNILIFE se muestran únicamente categorías con productos OMNILIFE.
+- Al seleccionar SEYTÚ se muestran únicamente categorías con productos SEYTÚ.
+- Al cambiar de empresa, la categoría seleccionada se reinicia si ya no pertenece a esa empresa.
+
+3. CATEGORÍAS DEL ADMINISTRADOR
+- Al abrir "Agregar producto", las categorías se cargan desde MySQL.
+- Cambiar OMNILIFE/SEYTÚ actualiza inmediatamente la lista de categorías.
+- "＋ Crear categoría" abre un cuadro propio de la página.
+- La categoría nueva se guarda en MySQL, se selecciona automáticamente y queda disponible para nuevos productos.
+- Las categorías también se sincronizan al crear o editar productos.
+
+4. MARCAS
+- El catálogo actual usa productos 1..30 como OMNILIFE y 31..60 como SEYTÚ.
+- Los productos nuevos conservan la marca elegida por el administrador, en lugar de deducirla por ID.
+
+5. VERIFICACIÓN
+- backend/api.php: sintaxis PHP validada con php -l.
+- script.js y admin-category-product.js: sintaxis JavaScript validada con node --check.
+- La prueba local del endpoint no pudo conectar a MySQL en este entorno porque PHP no tiene instalado el driver PDO MySQL ("could not find driver"). En tu XAMPP/Apache con MySQL activo, la API debe utilizar el driver de tu instalación.

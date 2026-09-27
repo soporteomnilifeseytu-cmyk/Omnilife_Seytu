@@ -1,0 +1,19 @@
+CAMBIO DEFINITIVO DE IMAGENES - OMNILIFE x SEYTU
+
+Se conservan los nombres de los productos del catalogo (incluidas sus tildes).
+Solo se cambian los nombres FISICOS de las imagenes para evitar tildes, espacios y caracteres especiales en las rutas.
+
+Ahora assets/IMG contiene exactamente 60 imagenes:
+imagen-01.png ... imagen-60.png
+
+Los productos siguen mostrando sus nombres originales en la pagina.
+
+Para tu base actual omnilife_seytu:
+1. Copia este proyecto en C:\xampp\htdocs\final_omnilife\
+2. En phpMyAdmin abre la base omnilife_seytu.
+3. SQL -> pega/ejecuta actualizar_imagenes_01_60.sql
+4. Abre http://localhost/final_omnilife/
+5. Presiona Ctrl+F5.
+
+Los productos 39, 42 y 47 usan las tres imagenes que proporcionaste.
+No se usan los nombres antiguos de imagen con tildes/espacios.

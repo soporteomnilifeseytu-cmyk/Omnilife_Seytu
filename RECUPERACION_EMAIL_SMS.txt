@@ -1,0 +1,27 @@
+RECUPERACIÓN DE CONTRASEÑA — CORREO Y SMS
+
+La interfaz permite elegir Correo electrónico o SMS.
+
+BASE DE DATOS
+- Usa la tabla existente recuperacion_clave.
+- No crea recuperacion_password.
+- El token se guarda como SHA-256 y vence en 10 minutos.
+
+CORREO
+- Usa la configuración SMTP existente en backend/config.php.
+
+SMS
+- Se integra con Twilio. PHP no puede enviar SMS reales sin un proveedor externo.
+- En backend/config.php completa:
+  sms_enabled => true
+  sms_provider => twilio
+  sms_country_code => +51
+  twilio_account_sid => TU_SID
+  twilio_auth_token => TU_TOKEN
+  twilio_from => TU_NUMERO_TWILIO
+- Los teléfonos peruanos de 9 dígitos se convierten automáticamente a +51XXXXXXXXX.
+
+IMPORTANTE
+- No pongas credenciales de Twilio en archivos públicos.
+- Si no configuras Twilio, la opción SMS mostrará un mensaje indicando que falta configurar el proveedor.
+- Para pruebas locales sin envío externo puedes activar dev_reset_code => true; el código aparecerá en la interfaz y NO se enviará por SMS.

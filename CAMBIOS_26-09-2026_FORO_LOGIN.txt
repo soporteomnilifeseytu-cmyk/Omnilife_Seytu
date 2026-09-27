@@ -1,0 +1,16 @@
+CAMBIOS 26-09-2026 · FORO + LOGIN
+
+1. LOGIN
+- En pantallas de escritorio el formulario de inicio de sesión queda alineado al lado derecho.
+- El panel visual permanece de fondo a la izquierda.
+- Se evita la superposición entre el formulario y el fondo.
+- En móvil/tablet se conserva una disposición adaptativa.
+
+2. FORO
+- La navegación "Opiniones" se presenta como "Foro".
+- Se mantiene el formulario y diseño existente.
+- Las publicaciones ahora se guardan en MySQL en la tabla `foro`.
+- Se guardan usuario, comentario, fecha, valoración, título, tipo, aspecto, recomendación y contador de utilidad.
+- Las publicaciones se cargan de forma global, por lo que se acumulan y se muestran a los usuarios.
+- La tabla `foro` se crea automáticamente desde `backend/api.php`; también se incluye `FORO_MYSQL.sql`.
+- La publicación requiere una cuenta iniciada, como antes.

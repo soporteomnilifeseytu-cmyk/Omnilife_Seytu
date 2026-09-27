@@ -1,0 +1,23 @@
+OMNILIFE — CONEXIÓN REAL DE ADMINISTRACIÓN
+
+Esta versión mantiene la base de datos existente.
+NO IMPORTAR ningún SQL.
+
+Los botones:
+- Agregar producto
+- Añadir usuario
+
+abren sus formularios y comprueban la conexión con MySQL al abrirlos.
+
+Guardar producto y Crear usuario envían los datos a backend/api.php y verifican el registro creado.
+
+Base configurada para XAMPP:
+- host: 127.0.0.1
+- base: omnilife_seytu
+- usuario: root
+- contraseña: vacía (configuración habitual de XAMPP)
+
+Si tu MySQL root tiene contraseña, cambia únicamente 'pass' en backend/config.php.
+
+URL:
+http://localhost/final_omnilife/

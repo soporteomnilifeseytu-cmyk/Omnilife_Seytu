@@ -1,0 +1,13 @@
+CORRECCIÓN DE BOTONES ADMINISTRADOR - OMNILIFE × SEYTÚ
+
+Esta versión corrige específicamente:
+- + Agregar producto (botón del Resumen y Acciones rápidas)
+- + Añadir usuario
+- Guardar producto
+- Crear usuario
+
+Los botones para abrir los formularios ya no dependen de script.js: abren directamente sus modales y fuerzan su visualización.
+El guardado continúa usando backend/api.php y MySQL.
+
+NO ejecutar ningún .sql y NO importar nuevamente la base de datos.
+Conservar la carpeta anterior como final_omnilife_BACKUP.

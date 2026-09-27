@@ -1,0 +1,28 @@
+CAMBIOS - PERSISTENCIA DE FAVORITOS, CARRITO Y CIERRE DE MODALES
+
+1. FAVORITOS
+- Los favoritos de cada usuario se guardan en MySQL mediante la tabla favoritos.
+- Se mantiene además una copia local separada por id_usuario para recuperar la sesión en el mismo navegador.
+- Al cerrar sesión no se borra la información persistente de la cuenta.
+- Al iniciar sesión nuevamente se recuperan los favoritos de esa cuenta.
+
+2. CARRITO / MI PEDIDO
+- El carrito de cada usuario se guarda en usuario_estado de MySQL.
+- También se conserva una copia local por usuario como respaldo inmediato.
+- El cierre de sesión primero intenta guardar el estado en MySQL y luego limpia la interfaz.
+- Al volver a iniciar sesión se recupera el carrito anterior.
+
+3. CIERRE DE VENTANAS
+- Se agregó un cierre global robusto para todos los elementos con data-close.
+- La X de los modales, el botón Cerrar del detalle de compra y el cierre al hacer clic fuera del modal funcionan mediante delegación.
+- Escape también cierra cualquier modal abierto.
+
+4. COMPRA / DETALLE
+- Se conserva Ver boleta y Cerrar dentro del detalle del pedido.
+- Cerrar ya no depende de que el listener anterior haya quedado interrumpido.
+
+5. ADMINISTRADOR
+- Se conserva el cambio anterior de Configuración de administrador y guardado de datos en MySQL.
+
+6. CACHE
+- Se incrementó la versión de script.js a 20260927-02 para que el navegador cargue los cambios nuevos.

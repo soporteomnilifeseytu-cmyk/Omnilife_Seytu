@@ -1,0 +1,30 @@
+CAMBIOS REALIZADOS – OMNILIFE × SEYTÚ
+25/09/2026
+
+1. INICIO DE SESIÓN
+- La tarjeta de iniciar sesión queda centrada horizontal y verticalmente.
+- Se conserva el fondo y la identidad visual OMNILIFE × SEYTÚ.
+- Se mantiene adaptación para pantallas pequeñas.
+
+2. CARRITO RÁPIDO
+- El contador superior se actualiza inmediatamente.
+- El contador del carrito tiene una animación breve al cambiar.
+- La ventana rápida del carrito muestra cuántos productos están listos.
+- Cada producto aparece marcado con ✓.
+- Se puede subir, bajar o quitar unidades inmediatamente.
+- Se agregó el botón Vaciar para limpiar el carrito de forma rápida.
+- El total se actualiza al instante.
+
+3. PERSISTENCIA POR CUENTA
+- Al iniciar sesión se recupera primero el estado guardado de esa cuenta desde MySQL.
+- Se evita la condición de carrera entre favoritos y estado de usuario que podía hacer que una cuenta pareciera vacía.
+- Favoritos y carrito quedan asociados a la cuenta y se recuperan al volver a iniciar sesión.
+- La tabla de favoritos existente sigue funcionando para la administración.
+- No se mezclan favoritos o carrito de una cuenta anterior con otra.
+
+4. NO SE MODIFICÓ
+- Productos, precios, imágenes y catálogo.
+- Pedidos y checkout.
+- Base de datos de usuarios.
+- Recuperación de contraseña/Gmail.
+- Administración.

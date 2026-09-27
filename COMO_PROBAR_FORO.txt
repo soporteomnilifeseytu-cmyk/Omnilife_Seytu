@@ -1,0 +1,17 @@
+FORO PÚBLICO - PASOS PARA PROBAR
+
+1. Copia la carpeta final_omnilife en C:\xampp\htdocs\ (si usas XAMPP).
+2. En XAMPP enciende Apache y MySQL.
+3. Abre http://localhost/phpmyadmin/ y verifica la base omnilife_seytu.
+4. Si todavía no existe la tabla foro, importa FORO.sql. El backend también intenta crearla automáticamente.
+5. Abre http://localhost/final_omnilife/
+6. Inicia sesión con un usuario existente.
+7. En el menú entra a Foro.
+8. Escribe un comentario y pulsa Publicar comentario.
+9. Comprueba que aparece debajo sin recargar.
+10. En phpMyAdmin abre omnilife_seytu > foro y verifica que se creó una fila con id_usuario, comentario y fecha.
+11. Recarga la página y vuelve a entrar al Foro: el comentario debe seguir allí.
+12. Para probar varios usuarios, inicia sesión con otra cuenta y publica otro comentario.
+
+Si aparece "No se pudieron cargar los comentarios", revisa Apache/MySQL y backend/config.php.
+Si aparece un error JSON, abre http://localhost/final_omnilife/backend/api.php?action=forum_list para ver si el backend responde JSON.

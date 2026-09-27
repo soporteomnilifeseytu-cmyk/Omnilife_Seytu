@@ -1,0 +1,5 @@
+Producto 61: Brocha Maquillaje Liquido.
+La imagen proporcionada por la usuaria se conserva exactamente como assets/IMG/imagen-61.png.
+La aplicación ahora prioriza la imagen canónica local para el producto 61 incluso si MySQL conserva una ruta antigua válida.
+Se añadió confirmación explícita para quitar productos: Aceptar para quitar / Cancelar para mantener.
+La eliminación de productos es lógica (estado Oculto) para no romper pedidos históricos.

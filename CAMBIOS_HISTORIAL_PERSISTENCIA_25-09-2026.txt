@@ -1,0 +1,17 @@
+CAMBIOS V4 — HISTORIAL Y PERSISTENCIA
+
+1. Historial de compras
+- Mis compras sigue cargando todos los pedidos del usuario directamente desde MySQL.
+- Se mantiene cada pedido y su boleta después de cerrar sesión y volver a entrar.
+- Se añadió sincronización periódica para recuperar cambios del historial entre dispositivos.
+
+2. Estados de pedido
+- Los estados ahora se muestran dentro de etiquetas visuales integradas al cuadro.
+- Estado del pedido y revisión (Visto/Pendiente de revisión) aparecen separados para evitar textos desbordados.
+- El diseño se adapta a pantallas pequeñas y al modo oscuro.
+
+3. Persistencia por usuario
+- Se implementaron los endpoints user_state_get y user_state_save.
+- Favoritos, carrito, opiniones, recientes, filtro seleccionado, valoración, método de pago y preferencias visuales se guardan por usuario en MySQL.
+- Al iniciar sesión se limpia primero la sesión local anterior y después se recupera el estado de la cuenta actual, evitando mezclar datos entre usuarios.
+- Se sincroniza periódicamente el estado para que los cambios realizados desde otro dispositivo puedan recuperarse.

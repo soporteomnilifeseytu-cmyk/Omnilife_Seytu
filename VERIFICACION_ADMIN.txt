@@ -1,0 +1,19 @@
+PROYECTO OMNILIFE - VERSION CORREGIDA
+
+1. Copia esta carpeta completa como:
+   C:\xampp\htdocs\final_omnilife
+
+2. No ejecutes data.sql ni vuelvas a importar la base si tus 60 productos ya están en MySQL.
+
+3. En XAMPP enciende Apache y MySQL.
+
+4. Abre:
+   http://localhost/final_omnilife/
+
+5. En Administrador prueba:
+   - + Agregar producto -> completa -> Guardar producto.
+   - + Añadir usuario -> completa -> Crear usuario.
+
+6. La interfaz solo muestra éxito después de volver a consultar la API y verificar que el ID recién creado exista en MySQL.
+
+7. Si Chrome conserva una versión vieja, haz Ctrl+F5 una vez. El HTML ya lleva versionado de script.js para evitar el caché normal.

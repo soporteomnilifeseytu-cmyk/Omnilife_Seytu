@@ -1,0 +1,30 @@
+SINCRONIZACIÓN CENTRAL OMNILIFE × SEYTÚ
+
+Esta versión usa MySQL como fuente central de productos.
+
+1. En el administrador:
+   - Edita nombre, categoría, descripción, precio, stock, imagen o estado.
+   - Pulsa Guardar y sincronizar.
+   - El cambio se guarda en MySQL.
+
+2. En los catálogos:
+   - Cada página consulta products desde backend/api.php.
+   - Se actualiza automáticamente cada 4 segundos cuando la página está visible.
+   - BroadcastChannel también sincroniza pestañas del mismo navegador.
+
+3. Agregar productos:
+   - Administración > Productos > Agregar producto.
+   - Completa nombre, categoría, precio, stock, descripción, estado e imagen.
+   - Se guarda directamente en MySQL y se incorpora al catálogo.
+
+4. IMPORTANTE SOBRE INTERNET:
+   - XAMPP en localhost NO hace que la web sea pública en Internet.
+   - Para que varios dispositivos desde cualquier lugar compartan los mismos cambios,
+     Apache/PHP/MySQL deben estar en un servidor accesible por Internet (hosting/VPS).
+   - Si todos están en la misma red local, pueden usar la IP del PC servidor y Apache
+     debe permitir conexiones de esa red.
+   - El código usa una URL relativa para el backend, por lo que al publicar la carpeta
+     en un dominio la API seguirá al mismo dominio.
+
+5. NO importar nuevamente SQL si la base ya está cargada. La tabla productos sigue siendo
+   la fuente central y las imágenes imagen-01.png ... imagen-60.png se conservan.

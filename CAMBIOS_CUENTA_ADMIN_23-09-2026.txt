@@ -1,0 +1,34 @@
+CAMBIOS IMPLEMENTADOS – OMNILIFE × SEYTÚ
+
+1. MI CUENTA / CONFIGURACIÓN
+- Se mantienen las funciones existentes.
+- Se agregó edición de nombres, apellidos, usuario y correo.
+- Se agregó cambio de contraseña con validación de contraseña actual.
+- Cambiar imagen y quitar imagen ahora también aparecen directamente en Mi cuenta.
+- Se conserva la edición de imagen existente en Configuración.
+
+2. ADMINISTRADOR
+- Se agregó Configuración al menú del administrador.
+- Permite cambiar nombre, correo y contraseña del administrador.
+- Permite cambiar y quitar la imagen del administrador.
+- El nombre/correo actualizados se reflejan en el panel.
+
+3. PEDIDOS / ESTADOS / VISTO
+- Los pedidos del administrador muestran estado: Pendiente, Procesando, Entregado o Realizado.
+- Se agregó control Visto / Marcar visto.
+- El estado y visto se guardan en MySQL mediante la API.
+- Mi cuenta / Mis compras muestra el estado actualizado y si fue visto.
+- Se agregó sincronización de pedidos para el panel administrativo.
+
+4. COMPATIBILIDAD
+- Se conservaron catálogo, carrito, favoritos, recuperación de contraseña, imágenes, apariencia y demás funciones existentes.
+- Los cambios de cuenta se conectan con MySQL cuando el backend está disponible; se conserva el funcionamiento local existente donde corresponde.
+
+
+ACTUALIZACIÓN 23-09-2026
+- Pedidos: confirmación primero en MySQL; luego se actualiza el stock local y la interfaz.
+- Administración: pedidos consultados desde MySQL, actualización automática, detalle de productos, estado, cliente, total y botón de boleta.
+- Boleta: disponible desde Mis compras y desde Administración con detalle de productos, cantidades, precios y total.
+- Usuarios: se eliminan duplicados visuales en la lista de administración.
+- Configuración: rediseño visual para usuario y administrador, con tarjetas, jerarquía y estados más claros.
+- Seguridad de interfaz: los pedidos del administrador no se transmiten por BroadcastChannel a otras pestañas.
